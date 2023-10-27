@@ -62,7 +62,7 @@ List<BaseModel> mainList = [
   BaseModel(
       id: 7,
       imageUrl: 'assets/images/7.jpeg',
-      name: 'White chemise',
+      name: 'hat',
       price: 80,
       review: 1.4,
       star: 4.1,
@@ -70,7 +70,7 @@ List<BaseModel> mainList = [
   BaseModel(
       id: 8,
       imageUrl: 'assets/images/8.jpeg',
-      name: 'White chemise',
+      name: 'ploza',
       price: 160,
       review: 1.4,
       star: 4.1,
@@ -78,7 +78,7 @@ List<BaseModel> mainList = [
   BaseModel(
       id: 9,
       imageUrl: 'assets/images/9.jpeg',
-      name: 'White chemise',
+      name: 'short',
       price: 180,
       review: 1.4,
       star: 4.1,
@@ -86,9 +86,10 @@ List<BaseModel> mainList = [
   BaseModel(
       id: 10,
       imageUrl: 'assets/images/kids.jpeg',
-      name: 'White chemise',
+      name: ' chemise',
       price: 60,
       review: 1.4,
       star: 4.1,
       value: 1),
 ];
+List<BaseModel> itemOnSearch = [];

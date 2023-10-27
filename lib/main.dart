@@ -1,10 +1,10 @@
+import 'package:clothing_market/main_wrapper.dart';
 import 'package:clothing_market/utils/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'screens/home.dart';
-
-void main() => runApp(MaterialApp(
+void main() => runApp(GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.appTheme,
-      home: Home(),
+      home: const MainWrapper(),
     ));
