@@ -1,11 +1,14 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:clothing_market/utils/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:line_icons/line_icon.dart';
 import 'package:line_icons/line_icons.dart';
 
-import '../data/app_data.dart';
-import '../model/base_model.dart';
+import '../../data/app_data.dart';
+import '../cart/method/add_to_cart.dart';
+import '../../model/base_model.dart';
+import '../detail/detail.dart';
 
 class Search extends StatefulWidget {
   const Search({super.key});
@@ -95,7 +98,12 @@ class _SearchState extends State<Search> {
                           itemBuilder: (context, index) {
                             BaseModel current = itemOnSearch[index];
                             return GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                Get.to(Details(
+                                  data: itemOnSearch[index],
+                                  isComeFromMostPopulart: true,
+                                ));
+                              },
                               child: FadeInUp(
                                 delay: const Duration(milliseconds: 350),
                                 child: Stack(
@@ -105,25 +113,28 @@ class _SearchState extends State<Search> {
                                       top: size.height * 0.02,
                                       left: size.height * 0.01,
                                       right: size.height * 0.01,
-                                      child: Container(
-                                        margin: const EdgeInsets.all(10),
-                                        width: size.width * 0.5,
-                                        height: size.height * 0.28,
-                                        decoration: BoxDecoration(
-                                            image: DecorationImage(
-                                                image: AssetImage(
-                                                    current.imageUrl),
-                                                fit: BoxFit.cover),
-                                            borderRadius:
-                                                BorderRadius.circular(5),
-                                            boxShadow: const [
-                                              BoxShadow(
-                                                blurRadius: 4,
-                                                offset: Offset(0, 4),
-                                                color:
-                                                    Color.fromARGB(61, 0, 0, 0),
-                                              ),
-                                            ]),
+                                      child: Hero(
+                                        tag: current.imageUrl,
+                                        child: Container(
+                                          margin: const EdgeInsets.all(10),
+                                          width: size.width * 0.5,
+                                          height: size.height * 0.28,
+                                          decoration: BoxDecoration(
+                                              image: DecorationImage(
+                                                  image: AssetImage(
+                                                      current.imageUrl),
+                                                  fit: BoxFit.cover),
+                                              borderRadius:
+                                                  BorderRadius.circular(5),
+                                              boxShadow: const [
+                                                BoxShadow(
+                                                  blurRadius: 4,
+                                                  offset: Offset(0, 4),
+                                                  color: Color.fromARGB(
+                                                      61, 0, 0, 0),
+                                                ),
+                                              ]),
+                                        ),
                                       ),
                                     ),
                                     Positioned(
@@ -161,7 +172,9 @@ class _SearchState extends State<Search> {
                                           backgroundColor: primaryColor,
                                           child: IconButton(
                                               onPressed: () {
-                                                print(current.name);
+                                                AddToCart.addToCart(
+                                                    current, context);
+                                                ;
                                               },
                                               icon: Icon(
                                                 LineIcons.addToShoppingCart,

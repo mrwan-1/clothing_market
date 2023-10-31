@@ -1,10 +1,12 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:bottom_bar_matu/bottom_bar/bottom_bar_bubble.dart';
 import 'package:bottom_bar_matu/bottom_bar_matu.dart';
-import 'package:clothing_market/screens/home.dart';
-import 'package:clothing_market/screens/search.dart';
+import 'package:clothing_market/screens/cart/cart.dart';
+import 'package:clothing_market/screens/home/home.dart';
+import 'package:clothing_market/screens/search/search.dart';
 import 'package:clothing_market/utils/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:line_icons/line_icons.dart';
 
 class MainWrapper extends StatefulWidget {
@@ -71,7 +73,9 @@ class _MainWrapperState extends State<MainWrapper> {
                   ),
           ),
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Get.to(Cart());
+              },
               icon: Icon(
                 LineIcons.shoppingBag,
                 color: Colors.black,

@@ -17,14 +17,14 @@ List<BaseModel> mainList = [
       name: 'White chemise',
       price: 100,
       review: 1.4,
-      star: 4.1,
+      star: 5,
       value: 1),
   BaseModel(
       id: 2,
       imageUrl: 'assets/images/2.jpeg',
       name: 'Jacket',
       price: 140,
-      review: 1.4,
+      review: 2.4,
       star: 4.1,
       value: 1),
   BaseModel(
@@ -33,15 +33,15 @@ List<BaseModel> mainList = [
       name: 'pullover',
       price: 110,
       review: 1.4,
-      star: 4.1,
+      star: 3.1,
       value: 1),
   BaseModel(
       id: 4,
       imageUrl: 'assets/images/4.jpeg',
       name: 'brown pullover',
       price: 120,
-      review: 1.4,
-      star: 4.1,
+      review: 0.4,
+      star: 2.1,
       value: 1),
   BaseModel(
       id: 5,
@@ -81,15 +81,16 @@ List<BaseModel> mainList = [
       name: 'short',
       price: 180,
       review: 1.4,
-      star: 4.1,
+      star: 2.5,
       value: 1),
   BaseModel(
       id: 10,
       imageUrl: 'assets/images/kids.jpeg',
       name: ' chemise',
       price: 60,
-      review: 1.4,
-      star: 4.1,
+      review: 0.4,
+      star: 1.6,
       value: 1),
 ];
 List<BaseModel> itemOnSearch = [];
+List<BaseModel> itemOnCart = [];
