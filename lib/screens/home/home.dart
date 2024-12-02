@@ -41,11 +41,11 @@ class Home extends StatelessWidget {
                     children: [
                       Text(
                         'Most Popluer',
-                        style: theme.headline3,
+                        style: theme.displaySmall,
                       ),
                       Text(
                         'See All',
-                        style: theme.headline4,
+                        style: theme.headlineMedium,
                       ),
                     ],
                   ),

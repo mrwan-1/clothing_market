@@ -61,20 +61,20 @@ class MostPopluerContent extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 2.0),
                     child: Text(
                       current.name,
-                      style: theme.headline2,
+                      style: theme.displayMedium,
                     ),
                   ),
                   RichText(
                     text: TextSpan(
                         text: "\$",
-                        style: theme.subtitle2?.copyWith(
+                        style: theme.titleSmall?.copyWith(
                             color: Colors.lightGreen[400],
                             fontSize: 20,
                             fontWeight: FontWeight.bold),
                         children: [
                           TextSpan(
                             text: current.price.toString(),
-                            style: theme.subtitle2?.copyWith(
+                            style: theme.titleSmall?.copyWith(
                                 color: Colors.black,
                                 fontWeight: FontWeight.bold),
                           ),

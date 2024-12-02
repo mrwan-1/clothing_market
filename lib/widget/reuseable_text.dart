@@ -12,14 +12,14 @@ class ReUseableTextForDeatils extends StatelessWidget {
     return RichText(
       text: TextSpan(
           text: "\$",
-          style: theme.subtitle2?.copyWith(
+          style: theme.titleSmall?.copyWith(
               color: Colors.lightGreen[400],
               fontSize: 21,
               fontWeight: FontWeight.bold),
           children: [
             TextSpan(
               text: text,
-              style: theme.subtitle2?.copyWith(
+              style: theme.titleSmall?.copyWith(
                   // color: Colors.black,
                   fontSize: 23,
                   fontWeight: FontWeight.bold),

@@ -17,7 +17,7 @@ class ReuseAbleCartForRow extends StatelessWidget {
         children: [
           Text(
             text,
-            style: theme.headline5?.copyWith(fontSize: 16, color: Colors.grey),
+            style: theme.headlineSmall?.copyWith(fontSize: 16, color: Colors.grey),
           ),
           ReUseableTextForDeatils(text: price.toString())
         ],

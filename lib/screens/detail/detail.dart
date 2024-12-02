@@ -91,7 +91,7 @@ class _DetailsState extends State<Details> {
                         children: [
                           Text(
                             current.name,
-                            style: theme.headline3?.copyWith(fontSize: 23),
+                            style: theme.displaySmall?.copyWith(fontSize: 23),
                           ),
                           ReUseableTextForDeatils(
                             text: widget.data.price.toString(),
@@ -119,7 +119,7 @@ class _DetailsState extends State<Details> {
                           Text(
                             '${current.review} K + review',
                             style:
-                                theme.headline5?.copyWith(color: Colors.grey),
+                                theme.headlineSmall?.copyWith(color: Colors.grey),
                           ),
                           SizedBox(
                             width: 5,
@@ -143,7 +143,7 @@ class _DetailsState extends State<Details> {
                 padding: const EdgeInsets.only(left: 10.0, top: 18, bottom: 20),
                 child: Text(
                   'Select Size',
-                  style: theme.headline3?.copyWith(),
+                  style: theme.displaySmall?.copyWith(),
                 ),
               ),
             ),
@@ -200,7 +200,7 @@ class _DetailsState extends State<Details> {
                 padding: const EdgeInsets.only(left: 10.0, top: 18, bottom: 20),
                 child: Text(
                   'Select Color',
-                  style: theme.headline3?.copyWith(),
+                  style: theme.displaySmall?.copyWith(),
                 ),
               ),
             ),

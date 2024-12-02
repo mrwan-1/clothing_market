@@ -5,18 +5,18 @@ class AppTheme {
   static ThemeData appTheme = ThemeData(
       fontFamily: '',
       textTheme: const TextTheme(
-          headline1: TextStyle(
+          displayLarge: TextStyle(
             fontSize: 38,
             color: Colors.black,
             fontWeight: FontWeight.w500,
           ),
-          headline2: TextStyle(
+          displayMedium: TextStyle(
               fontSize: 16, color: Colors.black, fontWeight: FontWeight.w400),
-          headline3: TextStyle(
+          displaySmall: TextStyle(
               color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
-          headline4: TextStyle(
+          headlineMedium: TextStyle(
               fontSize: 14, fontWeight: FontWeight.w400, color: Colors.blue),
-          headline5: TextStyle(
+          headlineSmall: TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.w500,
           )));

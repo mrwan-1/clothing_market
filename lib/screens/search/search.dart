@@ -69,7 +69,7 @@ class _SearchState extends State<Search> {
                                   FocusManager.instance.primaryFocus?.unfocus();
                                 },
                                 icon: const Icon(Icons.close)),
-                            hintStyle: theme.headline3?.copyWith(
+                            hintStyle: theme.displaySmall?.copyWith(
                               fontSize: 15,
                               fontWeight: FontWeight.w400,
                               color: Colors.grey[600],
@@ -78,7 +78,7 @@ class _SearchState extends State<Search> {
                                 borderSide: BorderSide.none,
                                 borderRadius: BorderRadius.circular(10)),
                             hintText: 'e.g.cosual jeans'),
-                        style: theme.headline3?.copyWith(
+                        style: theme.displaySmall?.copyWith(
                             fontSize: 15, fontWeight: FontWeight.w400),
                       ),
                     ),
@@ -141,7 +141,7 @@ class _SearchState extends State<Search> {
                                       bottom: size.height * 0.04,
                                       child: Text(
                                         current.name,
-                                        style: theme.headline2,
+                                        style: theme.displayMedium,
                                       ),
                                     ),
                                     Positioned(
@@ -149,14 +149,14 @@ class _SearchState extends State<Search> {
                                       child: RichText(
                                         text: TextSpan(
                                             text: "\$",
-                                            style: theme.subtitle2?.copyWith(
+                                            style: theme.titleSmall?.copyWith(
                                                 color: Colors.lightGreen[400],
                                                 fontSize: 20,
                                                 fontWeight: FontWeight.bold),
                                             children: [
                                               TextSpan(
                                                 text: current.price.toString(),
-                                                style: theme.subtitle2
+                                                style: theme.titleSmall
                                                     ?.copyWith(
                                                         color: Colors.black,
                                                         fontWeight:

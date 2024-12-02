@@ -149,14 +149,14 @@ class _CartState extends State<Cart> {
                                         RichText(
                                           text: TextSpan(
                                               text: "\$",
-                                              style: theme.subtitle2?.copyWith(
+                                              style: theme.titleSmall?.copyWith(
                                                   color: Colors.lightGreen[400],
                                                   fontSize: 21,
                                                   fontWeight: FontWeight.bold),
                                               children: [
                                                 TextSpan(
                                                   text: curent.price.toString(),
-                                                  style: theme.subtitle2
+                                                  style: theme.titleSmall
                                                       ?.copyWith(
                                                           // color: Colors.black,
                                                           fontSize: 17,
@@ -170,7 +170,7 @@ class _CartState extends State<Cart> {
                                         ),
                                         Text(
                                           'Size = ${sizes[3]}',
-                                          style: theme.subtitle2?.copyWith(
+                                          style: theme.titleSmall?.copyWith(
                                               fontSize: 15,
                                               color: Colors.grey,
                                               fontWeight: FontWeight.w400),
@@ -220,7 +220,7 @@ class _CartState extends State<Cart> {
                                                 child: Text(
                                                   curent.value.toString(),
                                                   style:
-                                                      theme.subtitle2?.copyWith(
+                                                      theme.titleSmall?.copyWith(
                                                     fontWeight: FontWeight.w400,
                                                     fontSize: 15,
                                                   ),
@@ -314,7 +314,7 @@ class _CartState extends State<Cart> {
                           children: [
                             Text(
                               'Promo / Student Code Or Vourchers',
-                              style: theme.headline3?.copyWith(fontSize: 16),
+                              style: theme.displaySmall?.copyWith(fontSize: 16),
                             ),
                             Icon(
                               Icons.arrow_forward_ios_sharp,

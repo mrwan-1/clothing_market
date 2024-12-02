@@ -20,11 +20,11 @@ class HeaderHome extends StatelessWidget {
             RichText(
                 text: TextSpan(
                     text: "Find your ",
-                    style: theme.headline1,
+                    style: theme.displayLarge,
                     children: [
                   TextSpan(
                     text: "Style",
-                    style: theme.headline1?.copyWith(
+                    style: theme.displayLarge?.copyWith(
                         color: primaryColor,
                         fontSize: 45,
                         fontWeight: FontWeight.bold),
@@ -33,7 +33,7 @@ class HeaderHome extends StatelessWidget {
             RichText(
                 text: TextSpan(
                     text: "Be more beautiful with our ",
-                    style: theme.headline1?.copyWith(
+                    style: theme.displayLarge?.copyWith(
                         color: Colors.black,
                         fontSize: 16,
                         fontWeight: FontWeight.w400),

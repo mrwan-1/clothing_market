@@ -96,20 +96,20 @@ class _BodyTheHomeState extends State<BodyTheHome> {
             padding: const EdgeInsets.only(top: 10.0),
             child: Text(
               data.name,
-              style: theme.headline2,
+              style: theme.displayMedium,
             ),
           ),
           RichText(
             text: TextSpan(
                 text: "\$",
-                style: theme.headline2?.copyWith(
+                style: theme.displayMedium?.copyWith(
                     color: Colors.lightGreen[400],
                     fontSize: 26,
                     fontWeight: FontWeight.bold),
                 children: [
                   TextSpan(
                     text: data.price.toString(),
-                    style: theme.headline2?.copyWith(
+                    style: theme.displayMedium?.copyWith(
                         color: Colors.black,
                         fontSize: 25,
                         fontWeight: FontWeight.w600),

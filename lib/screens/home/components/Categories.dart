@@ -38,7 +38,7 @@ class Categories extends StatelessWidget {
                   ),
                   Text(
                     curent.title,
-                    style: theme.subtitle1,
+                    style: theme.titleMedium,
                   )
                 ],
               ),
